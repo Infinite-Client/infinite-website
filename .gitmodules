@@ -1,0 +1,3 @@
+[submodule "infinite-client"]
+	path = infinite-client
+	url = https://github.com/Infinite-Client/infinite-client
