@@ -21,14 +21,9 @@
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(255, 85, 255, 0.08);
   --ifm-link-color: #ff7dff;
-  --ifm-background-color: #ffffff;
+  --ifm-background-color: #f5f5f5;
   --ifm-font-color-base: #2a2a2a; /* Explicitly set global font color for light mode */
   --ifm-contents-border-color: rgba(0, 0, 0, 0.1); /* General border color */
-
-  /* Homepage hero banner variables (Light Mode) */
-  --hero-banner-bg: linear-gradient(135deg, #e0e7ff 0%, #f0f3ff 60%, #e6e8ff 100%);
-  --hero-banner-after-bg-1: rgba(85, 85, 255, 0.1);
-  --hero-banner-after-bg-2: rgba(255, 85, 255, 0.1);
   --hero-title-color: #1a1a1a;
   --hero-subtitle-color: #4a4a4a;
   --badge-color: #2a2a2a;
@@ -95,10 +90,6 @@
   --ifm-font-color-base: #f6f7ff; /* Explicitly set global font color for dark mode */
   --ifm-contents-border-color: rgba(255, 255, 255, 0.08);
 
-  /* Homepage hero banner variables (Dark Mode) */
-  --hero-banner-bg: linear-gradient(135deg, #0b0a1a 0%, #110f2b 60%, #1c1135 100%);
-  --hero-banner-after-bg-1: rgba(255, 85, 255, 0.12);
-  --hero-banner-after-bg-2: rgba(85, 85, 255, 0.12);
   --hero-title-color: #f6f7ff;
   --hero-subtitle-color: #c3c7e6;
   --badge-color: #dfe3ff;
@@ -167,11 +158,6 @@ code {
   background: rgba(12, 10, 26, 0.72);
 }
 
-.navbar__link,
-.navbar-sidebar__link {
-  color: var(--ifm-color-primary);
-  background-color: transparent;
-}
 .clean-btn {
   padding: 0;
 }
@@ -207,4 +193,4 @@ code {
   color: var(
     --footer-text-color
   ) !important; /* Ensure links also inherit the correct color with !important */
-}
+} 
