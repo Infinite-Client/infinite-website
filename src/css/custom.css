@@ -167,12 +167,6 @@ code {
   background: rgba(12, 10, 26, 0.72);
 }
 
-.navbar__toggle,
-.navbar__items {
-  color: var(--ifm-color-primary); /* ナビゲーションバーのボタン色をプライマリカラーに設定 */
-  background-color: transparent;
-}
-
 .navbar__link,
 .navbar-sidebar__link {
   color: var(--ifm-color-primary);
@@ -198,11 +192,6 @@ code {
   display: flex;
   flex-direction: column;
 }
-
-.navbar-sidebar__backdrop {
-  display: none; /* デフォルトのバックドロップを非表示にする */
-}
-
 
 .footer {
   background: var(--footer-background-color);

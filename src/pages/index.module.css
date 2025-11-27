@@ -20,12 +20,13 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   align-items: center;
-  gap: 2rem;
+  gap: 4rem;
   position: relative;
 }
 
 .heroCopy {
   position: relative;
+  margin:1rem;
   z-index: 1;
 }
 
