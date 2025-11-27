@@ -42,6 +42,7 @@ code {
 }
 
 .navbar {
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   background: rgba(12, 10, 26, 0.72);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
