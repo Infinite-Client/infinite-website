@@ -106,16 +106,16 @@ button,
   gap: 8px;
 }
 
-button {
+.button {
   background: linear-gradient(120deg, var(--download-accent-start), var(--download-accent-end));
   color: #0c0b19; /* This color is fixed for the button text */
   box-shadow: 0 10px 40px rgba(255, 85, 255, 0.35); /* This might need to be a variable as well */
 }
 
-button:hover {
+.button:hover {
   transform: translateY(-1px);
 }
-button:active {
+.button:active {
   transform: translateY(0);
 }
 

@@ -85,7 +85,7 @@ export default function DownloadsPage(): ReactElement {
             <a className={styles.secondary} id="back" href={backHref}>
               ← Back
             </a>
-            <button id="go" onClick={handleDownload}>
+            <button id="go" className={styles.button} onClick={handleDownload}>
               Download
             </button>
             <span className={styles.muted}>

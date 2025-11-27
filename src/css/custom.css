@@ -169,9 +169,40 @@ code {
 
 .navbar__toggle,
 .navbar__items {
-  color: var(--ifm-font-color-base);
+  color: var(--ifm-color-primary); /* ナビゲーションバーのボタン色をプライマリカラーに設定 */
   background-color: transparent;
 }
+
+.navbar__link,
+.navbar-sidebar__link {
+  color: var(--ifm-color-primary);
+  background-color: transparent;
+}
+
+@media screen and (min-width: 996px) {
+  .navbar__toggle {
+    display: none;
+  }
+}
+
+/* ハンバーガーメニューが開いた際に画面全体を覆うスタイル */
+.navbar-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000; /* ナビゲーションバーよりも高いZインデックスを設定 */
+  background-color: var(--ifm-background-color); /* 背景色を設定 */
+  overflow-y: auto; /* コンテンツが画面より大きい場合にスクロール可能にする */
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-sidebar__backdrop {
+  display: none; /* デフォルトのバックドロップを非表示にする */
+}
+
 
 .footer {
   background: var(--footer-background-color);
