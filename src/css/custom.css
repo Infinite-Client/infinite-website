@@ -172,7 +172,9 @@ code {
   color: var(--ifm-color-primary);
   background-color: transparent;
 }
-
+.clean-btn {
+  padding: 0;
+}
 @media screen and (min-width: 996px) {
   .navbar__toggle {
     display: none;
