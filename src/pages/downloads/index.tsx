@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react'
+import React, { ReactElement, useEffect, useMemo, useState } from 'react'
 import Layout from '@theme/Layout'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
@@ -9,7 +9,7 @@ type Release = {
   assets?: { name: string; browser_download_url: string }[]
 }
 
-export default function DownloadsPage(): JSX.Element {
+export default function DownloadsPage(): ReactElement {
   const [releases, setReleases] = useState<Release[]>([])
   const [status, setStatus] = useState('Loading releases from GitHub…')
   const [selected, setSelected] = useState<string | undefined>()
@@ -173,7 +173,7 @@ export default function DownloadsPage(): JSX.Element {
           const firstUrl = jarAssetUrl(data[0]) ?? data[0].html_url
           setSelected(firstUrl)
         }
-      } catch (err) {
+      } catch {
         setStatus('Could not load releases (GitHub API failed). Using fallback latest link.')
         setSelected('https://github.com/Infinite-Client/infinite-client/releases/latest')
       }
