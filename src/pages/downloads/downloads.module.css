@@ -1,0 +1,156 @@
+/* Global styling for the downloads page, relying on Docusaurus/Infima defaults where possible */
+
+/* Body styling, using global Docusaurus variables */
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--ifm-font-family-base); /* Using Infima font family */
+  background: var(--download-shell-bg); /* Custom gradient for the shell background */
+  color: var(--ifm-font-color-base); /* Using Infima font color base */
+}
+
+.download-shell {
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  height: 100vh; /* Ensure it takes full viewport height for vertical centering */
+  padding-top: 0; /* Remove potential top padding from Docusaurus layout */
+}
+
+.card {
+  width: min(540px, 100%);
+  background: var(--download-card-bg);
+  border: 1px solid var(--download-border-color);
+  border-radius: 18px;
+  box-shadow: var(--download-shadow);
+  padding: 2rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: -40% 10% auto auto;
+  height: 180px;
+  width: 180px;
+  background: var(--download-card-before-radial);
+  filter: blur(12px);
+  pointer-events: none;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+  letter-spacing: -0.01em;
+}
+
+p {
+  margin: 0 0 18px;
+  color: var(--download-muted-text);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--download-label-color);
+}
+
+select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--download-border-color);
+  background: var(--download-select-bg);
+  color: var(--ifm-font-color-base);
+  font-size: 15px;
+  outline: none;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03); /* This might need to be a variable as well */
+  appearance: none;
+}
+
+option {
+  background: var(--download-option-bg);
+  color: var(--ifm-font-color-base);
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+button,
+.link {
+  appearance: none;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 18px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    transform 120ms ease,
+    box-shadow 120ms ease,
+    background 120ms ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+button {
+  background: linear-gradient(120deg, var(--download-accent-start), var(--download-accent-end));
+  color: #0c0b19; /* This color is fixed for the button text */
+  box-shadow: 0 10px 40px rgba(255, 85, 255, 0.35); /* This might need to be a variable as well */
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+button:active {
+  transform: translateY(0);
+}
+
+.secondary {
+  border: 1px solid var(--download-border-color);
+  background: var(--download-secondary-bg);
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+  padding: 12px 16px;
+}
+
+.secondary:hover {
+  background: var(--download-secondary-hover-bg);
+}
+
+.muted {
+  color: var(--download-muted-text);
+  font-size: 13px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: var(--download-pill-bg);
+  border: 1px solid var(--download-border-color);
+  font-size: 12px;
+  color: var(--download-pill-text);
+  margin-bottom: 14px;
+}
+
+.status {
+  font-size: 13px;
+  color: var(--download-muted-text);
+  margin-top: 6px;
+}

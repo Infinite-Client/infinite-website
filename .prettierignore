@@ -1,6 +1,6 @@
 build/
 node_modules/
 .docusaurus/
-bun.lockb
+bun.lock
 package.json
 tsconfig.json

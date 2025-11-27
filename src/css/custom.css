@@ -11,29 +11,143 @@
   --ifm-font-family-base:
     'Sora', 'Space Grotesk', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --ifm-heading-font-family: 'Space Grotesk', 'Sora', system-ui, sans-serif;
-  --ifm-color-primary: #8b60ff;
-  --ifm-color-primary-dark: #7146e0;
-  --ifm-color-primary-darker: #643acb;
-  --ifm-color-primary-darkest: #4d2c9f;
-  --ifm-color-primary-light: #a274ff;
-  --ifm-color-primary-lighter: #b182ff;
-  --ifm-color-primary-lightest: #caa8ff;
+  --ifm-color-primary: #b884ff;
+  --ifm-color-primary-dark: #a25dff;
+  --ifm-color-primary-darker: #964aff;
+  --ifm-color-primary-darkest: #7510ff;
+  --ifm-color-primary-light: #ceabff;
+  --ifm-color-primary-lighter: #dabeff;
+  --ifm-color-primary-lightest: #fbf8ff;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(255, 85, 255, 0.08);
   --ifm-link-color: #ff7dff;
+  --ifm-background-color: #ffffff;
+  --ifm-font-color-base: #2a2a2a; /* Explicitly set global font color for light mode */
+  --ifm-contents-border-color: rgba(0, 0, 0, 0.1); /* General border color */
+
+  /* Homepage hero banner variables (Light Mode) */
+  --hero-banner-bg: linear-gradient(135deg, #e0e7ff 0%, #f0f3ff 60%, #e6e8ff 100%);
+  --hero-banner-after-bg-1: rgba(85, 85, 255, 0.1);
+  --hero-banner-after-bg-2: rgba(255, 85, 255, 0.1);
+  --hero-title-color: #1a1a1a;
+  --hero-subtitle-color: #4a4a4a;
+  --badge-color: #2a2a2a;
+  --badge-bg: rgba(0, 0, 0, 0.07);
+  --badge-border: rgba(0, 0, 0, 0.08);
+  --ghost-button-color: #2a2a2a;
+  --ghost-button-bg: rgba(255, 255, 255, 0.04);
+  --ghost-button-border: rgba(0, 0, 0, 0.22);
+  --ghost-button-hover-bg: rgba(0, 0, 0, 0.08);
+  --ghost-button-hover-border: rgba(0, 0, 0, 0.4);
+  --meta-color: #5a5a5a;
+  --meta-bullet-color: #ff8aff;
+
+  /* Homepage Features section variables (Light Mode) */
+  --features-card-bg: radial-gradient(
+    140% 140% at 10% 10%,
+    rgba(85, 85, 255, 0.1),
+    rgba(255, 255, 255, 0.85)
+  );
+  --features-card-border: rgba(0, 0, 0, 0.1);
+  --features-card-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  --features-card-color: #2a2a2a;
+  --features-card-hover-border: rgba(85, 85, 255, 0.35);
+  --features-card-hover-shadow: 0 30px 80px rgba(0, 0, 0, 0.25);
+  --features-title-color: #1a1a1a;
+  --features-copy-color: #4a4a4a;
+
+  /* Downloads page variables (Light Mode) */
+  --download-shell-bg: linear-gradient(135deg, #e0e7ff 0%, #f0f3ff 60%, #e6e8ff 100%);
+  --download-card-bg: rgba(255, 255, 255, 0.9);
+  --download-accent-start: #5555ff;
+  --download-accent-end: #ff55ff;
+  --download-accent: #c778ff;
+  --download-muted-text: #4a4a4a;
+  --download-border-color: rgba(0, 0, 0, 0.1);
+  --download-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  --download-card-before-radial: radial-gradient(circle, rgba(85, 85, 255, 0.1), transparent 60%);
+  --download-select-bg: rgba(255, 255, 255, 0.95);
+  --download-option-bg: #f9faff;
+  --download-secondary-bg: rgba(0, 0, 0, 0.04);
+  --download-secondary-hover-bg: rgba(0, 0, 0, 0.08);
+  --download-pill-bg: rgba(0, 0, 0, 0.06);
+  --download-pill-text: #3a3a3a;
+  --download-label-color: #3a3a3a;
+
+  /* Footer variables (Light Mode) */
+  --footer-background-color: #f0f2f5;
+  --footer-border-color: rgba(0, 0, 0, 0.1);
+  --footer-text-color: var(--ifm-font-color-base);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #b884ff;
-  --ifm-color-primary-dark: #a069ff;
-  --ifm-color-primary-darker: #8d56f0;
-  --ifm-color-primary-darkest: #7443c3;
-  --ifm-color-primary-light: #c796ff;
-  --ifm-color-primary-lighter: #d6b4ff;
-  --ifm-color-primary-lightest: #e7d7ff;
+  --ifm-color-primary-dark: #a25dff;
+  --ifm-color-primary-darker: #964aff;
+  --ifm-color-primary-darkest: #7510ff;
+  --ifm-color-primary-light: #ceabff;
+  --ifm-color-primary-lighter: #dabeff;
+  --ifm-color-primary-lightest: #fbf8ff;
   --docusaurus-highlighted-code-line-bg: rgba(255, 85, 255, 0.12);
   --ifm-link-color: #ff9fff;
+  --ifm-background-color: #1a1a1a;
+  --ifm-font-color-base: #f6f7ff; /* Explicitly set global font color for dark mode */
+  --ifm-contents-border-color: rgba(255, 255, 255, 0.08);
+
+  /* Homepage hero banner variables (Dark Mode) */
+  --hero-banner-bg: linear-gradient(135deg, #0b0a1a 0%, #110f2b 60%, #1c1135 100%);
+  --hero-banner-after-bg-1: rgba(255, 85, 255, 0.12);
+  --hero-banner-after-bg-2: rgba(85, 85, 255, 0.12);
+  --hero-title-color: #f6f7ff;
+  --hero-subtitle-color: #c3c7e6;
+  --badge-color: #dfe3ff;
+  --badge-bg: rgba(255, 255, 255, 0.07);
+  --badge-border: rgba(255, 255, 255, 0.08);
+  --ghost-button-color: #f0eaff;
+  --ghost-button-bg: rgba(255, 255, 255, 0.04);
+  --ghost-button-border: rgba(255, 255, 255, 0.22);
+  --ghost-button-hover-bg: rgba(255, 255, 255, 0.08);
+  --ghost-button-hover-border: rgba(255, 255, 255, 0.4);
+  --meta-color: #9aa0c7;
+  --meta-bullet-color: #ff8aff;
+
+  /* Homepage Features section variables (Dark Mode) */
+  --features-card-bg: radial-gradient(
+    140% 140% at 10% 10%,
+    rgba(255, 85, 255, 0.18),
+    rgba(17, 17, 26, 0.85)
+  );
+  --features-card-border: rgba(255, 255, 255, 0.08);
+  --features-card-shadow: 0 20px 60px rgba(12, 10, 32, 0.4);
+  --features-card-color: #dfe3ff;
+  --features-card-hover-border: rgba(255, 85, 255, 0.35);
+  --features-card-hover-shadow: 0 30px 80px rgba(12, 10, 32, 0.6);
+  --features-title-color: #f4f4ff;
+  --features-copy-color: #b8bcdd;
+
+  /* Downloads page variables (Dark Mode) */
+  --download-shell-bg: linear-gradient(135deg, #0b0a1a 0%, #110f2b 60%, #1c1135 100%);
+  --download-card-bg: rgba(12, 10, 28, 0.86);
+  --download-accent-start: #5555ff;
+  --download-accent-end: #ff55ff;
+  --download-accent: #c778ff;
+  --download-muted-text: #b0b4d8;
+  --download-border-color: rgba(255, 255, 255, 0.08);
+  --download-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
+  --download-card-before-radial: radial-gradient(circle, rgba(255, 85, 255, 0.2), transparent 60%);
+  --download-select-bg: rgba(8, 10, 24, 0.9);
+  --download-option-bg: #0a0d1c;
+  --download-secondary-bg: rgba(255, 255, 255, 0.04);
+  --download-secondary-hover-bg: rgba(255, 255, 255, 0.08);
+  --download-pill-bg: rgba(255, 255, 255, 0.06);
+  --download-pill-text: #e5ddff;
+  --download-label-color: #c6d3ea;
+
+  /* Footer variables (Dark Mode) */
+  --footer-background-color: #0b0a1a;
+  --footer-border-color: rgba(255, 255, 255, 0.06);
+  --footer-text-color: var(--ifm-font-color-base);
 }
 
 code {
@@ -44,11 +158,31 @@ code {
 .navbar {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  background: rgba(12, 10, 26, 0.72);
+  background: rgba(255, 255, 255, 0.72); /* Lighter background for light mode */
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
+/* Dark mode override for navbar */
+[data-theme='dark'] .navbar {
+  background: rgba(12, 10, 26, 0.72);
+}
+
+.navbar__toggle,
+.navbar__items {
+  color: var(--ifm-font-color-base);
+  background-color: transparent;
+}
+
 .footer {
-  background: #0b0a1a;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  background: var(--footer-background-color);
+  border-top: 1px solid var(--footer-border-color);
+  color: var(
+    --footer-text-color
+  ) !important; /* Apply color to direct text children with !important */
+}
+
+.footer a {
+  color: var(
+    --footer-text-color
+  ) !important; /* Ensure links also inherit the correct color with !important */
 }
