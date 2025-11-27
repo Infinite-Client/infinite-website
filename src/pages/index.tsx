@@ -5,6 +5,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import Layout from '@theme/Layout'
 import HomepageFeatures from '@site/src/components/HomepageFeatures'
 import useBaseUrl from '@docusaurus/useBaseUrl'
+import Translate from '@docusaurus/Translate'
 
 import styles from './index.module.css'
 
@@ -15,15 +16,17 @@ function HomepageHeader() {
     <header className={clsx('hero', styles.heroBanner)}>
       <div className={clsx('container', styles.heroGrid)}>
         <div className={styles.heroCopy}>
-          <span className={styles.badge}>Fabric 1.21.10</span>
+          <span className={styles.badge}>
+            <Translate id="homepage.header.badge.fabricVersion">Fabric 1.21.10</Translate>
+          </span>
           <h1 className={styles.heroTitle}>{siteConfig.title}</h1>
           <p className={styles.heroSubtitle}>{siteConfig.tagline}</p>
           <div className={styles.ctaRow}>
             <Link className={clsx('button button--lg', styles.cta)} to="/docs/intro">
-              Get Started
+              <Translate id="homepage.header.button.getStarted">Get Started</Translate>
             </Link>
             <Link className={clsx('button button--lg', styles.ghostButton)} to="/downloads">
-              Download
+              <Translate id="homepage.header.button.download">Download</Translate>
             </Link>
             <Link
               className={clsx('button button--lg', styles.ghostButton)}
@@ -31,13 +34,21 @@ function HomepageHeader() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Discord
+              <Translate id="homepage.header.button.discord">Discord</Translate>
             </Link>
           </div>
           <ul className={styles.meta}>
-            <li>Fabric Loader 0.17.x</li>
-            <li>Fabric API 0.135.0+1.21.10</li>
-            <li>Focused modules, clean UI</li>
+            <li>
+              <Translate id="homepage.header.meta.fabricLoader">Fabric Loader 0.17.x</Translate>
+            </li>
+            <li>
+              <Translate id="homepage.header.meta.fabricApi">Fabric API 0.135.0+1.21.10</Translate>
+            </li>
+            <li>
+              <Translate id="homepage.header.meta.focusedModules">
+                Focused modules, clean UI
+              </Translate>
+            </li>
           </ul>
         </div>
         <div className={styles.heroVisual}>
@@ -54,7 +65,11 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={siteConfig.title}
-      description="Infinite Client — Lightweight Fabric utility client for Minecraft 1.21.10"
+      description={
+        <Translate id="homepage.layout.description">
+          Infinite Client — Lightweight Fabric utility client for Minecraft 1.21.10
+        </Translate>
+      }
     >
       <HomepageHeader />
       <main>

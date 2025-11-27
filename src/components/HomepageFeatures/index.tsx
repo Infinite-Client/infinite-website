@@ -2,29 +2,41 @@ import type { ReactNode } from 'react'
 import clsx from 'clsx'
 import Heading from '@theme/Heading'
 import styles from './styles.module.css'
+import Translate from '@docusaurus/Translate'
 
 type FeatureItem = {
-  title: string
+  title: ReactNode
   icon: string
   description: ReactNode
 }
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Lightweight core',
+    title: <Translate id="homepage.features.lightweightCore.title">Lightweight core</Translate>,
     icon: '💫',
-    description: 'Minimal UI with only the essentials so you can keep FPS high and avoid clutter.',
+    description: (
+      <Translate id="homepage.features.lightweightCore.description">
+        Minimal UI with only the essentials so you can keep FPS high and avoid clutter.
+      </Translate>
+    ),
   },
   {
-    title: 'Fabric-native',
+    title: <Translate id="homepage.features.fabricNative.title">Fabric-native</Translate>,
     icon: '🧵',
-    description: 'Built for Fabric 1.21.10 with matching API versions to stay close to vanilla.',
+    description: (
+      <Translate id="homepage.features.fabricNative.description">
+        Built for Fabric 1.21.10 with matching API versions to stay close to vanilla.
+      </Translate>
+    ),
   },
   {
-    title: 'Practical modules',
+    title: <Translate id="homepage.features.practicalModules.title">Practical modules</Translate>,
     icon: '🛠️',
-    description:
-      'Focused assists for building, movement, combat, and vision—no bloat, just tools that help.',
+    description: (
+      <Translate id="homepage.features.practicalModules.description">
+        Focused assists for building, movement, combat, and vision—no bloat, just tools that help.
+      </Translate>
+    ),
   },
 ]
 
