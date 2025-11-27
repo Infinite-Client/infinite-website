@@ -1,16 +1,16 @@
-import type {ReactNode} from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import type { ReactNode } from 'react'
+import clsx from 'clsx'
+import Link from '@docusaurus/Link'
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
+import Layout from '@theme/Layout'
+import HomepageFeatures from '@site/src/components/HomepageFeatures'
+import useBaseUrl from '@docusaurus/useBaseUrl'
 
-import styles from './index.module.css';
+import styles from './index.module.css'
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  const logo = useBaseUrl('/img/infinite-icon.svg');
+  const { siteConfig } = useDocusaurusContext()
+  const logo = useBaseUrl('/img/infinite-icon.svg')
   return (
     <header className={clsx('hero', styles.heroBanner)}>
       <div className={clsx('container', styles.heroGrid)}>
@@ -29,7 +29,8 @@ function HomepageHeader() {
               className={clsx('button button--lg', styles.ghostButton)}
               href="https://discord.gg/3ffN5JFpE4"
               target="_blank"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+            >
               Discord
             </Link>
           </div>
@@ -45,19 +46,20 @@ function HomepageHeader() {
         </div>
       </div>
     </header>
-  );
+  )
 }
 
 export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext()
   return (
     <Layout
       title={siteConfig.title}
-      description="Infinite Client — Lightweight Fabric utility client for Minecraft 1.21.10">
+      description="Infinite Client — Lightweight Fabric utility client for Minecraft 1.21.10"
+    >
       <HomepageHeader />
       <main>
         <HomepageFeatures />
       </main>
     </Layout>
-  );
+  )
 }

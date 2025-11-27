@@ -33,4 +33,3 @@ A quick map of the mod so you know where to look when adding or debugging featur
 ## Assets
 
 - `src/main/resources/assets/infinite`: icons and other branded assets bundled with the mod.
-

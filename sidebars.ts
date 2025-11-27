@@ -1,4 +1,4 @@
-import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
+import type { SidebarsConfig } from '@docusaurus/plugin-content-docs'
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -19,10 +19,7 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Getting Started',
       collapsible: false,
-      items: [
-        'getting-started/installation',
-        'getting-started/configuration',
-      ],
+      items: ['getting-started/installation', 'getting-started/configuration'],
     },
     {
       type: 'category',
@@ -34,13 +31,9 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Resources',
       collapsible: false,
-      items: [
-        'resources/code-structure',
-        'resources/contributing',
-        'resources/faq',
-      ],
+      items: ['resources/code-structure', 'resources/contributing', 'resources/faq'],
     },
   ],
-};
+}
 
-export default sidebars;
+export default sidebars

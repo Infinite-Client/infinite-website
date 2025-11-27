@@ -1,26 +1,24 @@
-import type {ReactNode} from 'react';
-import clsx from 'clsx';
-import Heading from '@theme/Heading';
-import styles from './styles.module.css';
+import type { ReactNode } from 'react'
+import clsx from 'clsx'
+import Heading from '@theme/Heading'
+import styles from './styles.module.css'
 
 type FeatureItem = {
-  title: string;
-  icon: string;
-  description: ReactNode;
-};
+  title: string
+  icon: string
+  description: ReactNode
+}
 
 const FeatureList: FeatureItem[] = [
   {
     title: 'Lightweight core',
     icon: '💫',
-    description:
-      'Minimal UI with only the essentials so you can keep FPS high and avoid clutter.',
+    description: 'Minimal UI with only the essentials so you can keep FPS high and avoid clutter.',
   },
   {
     title: 'Fabric-native',
     icon: '🧵',
-    description:
-      'Built for Fabric 1.21.10 with matching API versions to stay close to vanilla.',
+    description: 'Built for Fabric 1.21.10 with matching API versions to stay close to vanilla.',
   },
   {
     title: 'Practical modules',
@@ -28,9 +26,9 @@ const FeatureList: FeatureItem[] = [
     description:
       'Focused assists for building, movement, combat, and vision—no bloat, just tools that help.',
   },
-];
+]
 
-function Feature({title, icon, description}: FeatureItem) {
+function Feature({ title, icon, description }: FeatureItem) {
   return (
     <div className={clsx('col col--4', styles.card)}>
       <div className={styles.icon}>{icon}</div>
@@ -39,7 +37,7 @@ function Feature({title, icon, description}: FeatureItem) {
       </Heading>
       <p className={styles.copy}>{description}</p>
     </div>
-  );
+  )
 }
 
 export default function HomepageFeatures(): ReactNode {
@@ -53,5 +51,5 @@ export default function HomepageFeatures(): ReactNode {
         </div>
       </div>
     </section>
-  );
+  )
 }
