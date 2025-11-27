@@ -193,4 +193,4 @@ code {
   color: var(
     --footer-text-color
   ) !important; /* Ensure links also inherit the correct color with !important */
-} 
+}
