@@ -10,7 +10,8 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 20% 20%, rgba(255, 85, 255, 0.12), transparent 45%),
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 85, 255, 0.12), transparent 45%),
     radial-gradient(circle at 80% 0%, rgba(85, 85, 255, 0.12), transparent 35%);
   pointer-events: none;
 }
