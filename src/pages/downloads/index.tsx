@@ -14,8 +14,7 @@ export default function DownloadsPage(): JSX.Element {
   const [status, setStatus] = useState('Loading releases from GitHub…')
   const [selected, setSelected] = useState<string | undefined>()
   const backHref = useBaseUrl('/')
-  const apiUrl =
-    'https://api.github.com/repos/The-Infinitys/minecraft.infinite-client/releases?per_page=15'
+  const apiUrl = 'https://api.github.com/repos/Infinite-Client/infinite-client/releases?per_page=15'
 
   const styleBlock = useMemo(
     () => `
@@ -176,7 +175,7 @@ export default function DownloadsPage(): JSX.Element {
         }
       } catch (err) {
         setStatus('Could not load releases (GitHub API failed). Using fallback latest link.')
-        setSelected('https://github.com/The-Infinitys/minecraft.infinite-client/releases/latest')
+        setSelected('https://github.com/Infinite-Client/infinite-client/releases/latest')
       }
     }
     loadReleases()
@@ -208,7 +207,7 @@ export default function DownloadsPage(): JSX.Element {
           <label htmlFor="version">Version</label>
           <select id="version" value={selected} onChange={(e) => setSelected(e.target.value)}>
             {releases.length === 0 && (
-              <option value="https://github.com/The-Infinitys/minecraft.infinite-client/releases/latest">
+              <option value="https://github.com/Infinite-Client/infinite-client/releases/latest">
                 Latest release
               </option>
             )}

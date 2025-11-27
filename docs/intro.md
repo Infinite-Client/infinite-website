@@ -23,6 +23,6 @@ Lightweight Fabric utility client for Minecraft 1.21.10 with a clean, minimal in
 
 ## Useful Links
 
-- Project repo: https://github.com/The-Infinitys/minecraft.infinite-client
+- Project repo: https://github.com/Infinite-Client/infinite-client
 - Homepage: https://the-infinitys.f5.si/minecraft/infinite-client
 - Releases & downloads: /downloads

@@ -44,7 +44,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/The-Infinitys/minecraft.infinite-client/tree/main/docs',
+          editUrl: 'https://github.com/Infinite-Client/infinite-client/tree/main/docs',
         },
         blog: {
           showReadingTime: true,
@@ -54,7 +54,7 @@ const config: Config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/The-Infinitys/minecraft.infinite-client/tree/main/docs',
+          editUrl: 'https://github.com/Infinite-Client/infinite-client/tree/main/docs',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -92,7 +92,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://github.com/The-Infinitys/minecraft.infinite-client',
+          href: 'https://github.com/Infinite-Client/infinite-client',
           label: 'GitHub',
           position: 'right',
         },
@@ -119,7 +119,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub Repo',
-              href: 'https://github.com/The-Infinitys/minecraft.infinite-client',
+              href: 'https://github.com/Infinite-Client/infinite-client',
             },
             {
               label: 'Releases',
@@ -127,7 +127,7 @@ const config: Config = {
             },
             {
               label: 'Issue Tracker',
-              href: 'https://github.com/The-Infinitys/minecraft.infinite-client/issues',
+              href: 'https://github.com/Infinite-Client/infinite-client/issues',
             },
           ],
         },
@@ -140,7 +140,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/The-Infinitys/minecraft.infinite-client',
+              href: 'https://github.com/Infinite-Client/infinite-client',
             },
           ],
         },
