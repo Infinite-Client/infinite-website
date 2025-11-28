@@ -1,6 +1,5 @@
 {
-  "label": "Rendering",
-  "id": "ja_jp/local-features/rendering",
+  "label": "Rendering(Local)",
   "link": {
     "type": "generated-index", 
     "title": "Rendering 機能一覧"

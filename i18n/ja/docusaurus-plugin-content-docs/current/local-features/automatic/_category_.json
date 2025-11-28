@@ -1,6 +1,5 @@
 {
-  "label": "Automatic",
-  "id": "ja_jp/local-features/automatic",
+  "label": "Automatic(Local)",
   "link": {
     "type": "generated-index", 
     "title": "Automatic 機能一覧"

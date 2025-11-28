@@ -1,6 +1,5 @@
 {
-  "label": "Movement",
-  "id": "ja_jp/local-features/movement",
+  "label": "Movement(Local)",
   "link": {
     "type": "generated-index", 
     "title": "Movement 機能一覧"

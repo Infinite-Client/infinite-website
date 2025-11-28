@@ -7,6 +7,7 @@ echo "プロジェクトルート: $PROJECT_DIR"
 # ---------------------------------------------
 # 1. ドキュメントの生成
 # ---------------------------------------------
+rm -rf ./docs/*-features ./i18n/ja/docusaurus-plugin-content-docs/current/*-features
 echo "--- ドキュメントを生成中 ---"
 cd infinite-client/
 ./gradlew genDocs
