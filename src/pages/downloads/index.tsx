@@ -66,10 +66,9 @@ export default function DownloadsPage(): ReactElement {
 
   return (
     <Layout
-      title={<Translate id="downloads.layout.title">Downloads</Translate>}
-      description={
-        <Translate id="downloads.layout.description">Download Infinite Client builds</Translate>
-      }
+      // 修正 1: Layoutのtitleとdescriptionを文字列リテラルに変更
+      title="Downloads"
+      description="Download Infinite Client builds"
     >
       <div className={styles.downloadShell}>
         <main className={styles.card}>
@@ -101,9 +100,7 @@ export default function DownloadsPage(): ReactElement {
                   <Translate
                     id="downloads.option.latestVersion"
                     values={{ tagName: release.tag_name }}
-                  >
-                    Latest ({release.tag_name})
-                  </Translate>
+                  ></Translate>
                 ) : (
                   release.tag_name
                 )
