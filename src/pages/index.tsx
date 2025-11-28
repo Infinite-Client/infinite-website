@@ -62,15 +62,9 @@ function HomepageHeader() {
 
 export default function Home(): ReactNode {
   const { siteConfig } = useDocusaurusContext()
+  const description = "Infinite Client — Lightweight Fabric utility client for Minecraft 1.21.10"
   return (
-    <Layout
-      title={siteConfig.title}
-      description={
-        <Translate id="homepage.layout.description">
-          Infinite Client — Lightweight Fabric utility client for Minecraft 1.21.10
-        </Translate>
-      }
-    >
+    <Layout title={siteConfig.title} description={description}>
       <HomepageHeader />
       <main>
         <HomepageFeatures />

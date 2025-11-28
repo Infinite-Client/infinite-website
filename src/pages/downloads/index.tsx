@@ -66,7 +66,6 @@ export default function DownloadsPage(): ReactElement {
 
   return (
     <Layout
-      // 修正 1: Layoutのtitleとdescriptionを文字列リテラルに変更
       title="Downloads"
       description="Download Infinite Client builds"
     >
