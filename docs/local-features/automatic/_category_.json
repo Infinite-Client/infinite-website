@@ -1,7 +1,8 @@
 {
   "label": "Automatic",
+  "id": "en_us/local-features/automatic",
   "link": {
-    "type": "generated-index",
+    "type": "generated-index", 
     "title": "Automatic 機能一覧"
   }
 }

@@ -1,7 +1,8 @@
 {
   "label": "Fighting",
+  "id": "ja_jp/local-features/fighting",
   "link": {
-    "type": "generated-index",
+    "type": "generated-index", 
     "title": "Fighting 機能一覧"
   }
 }

@@ -1,7 +1,8 @@
 {
   "label": "Server",
+  "id": "en_us/global-features/server",
   "link": {
-    "type": "generated-index",
+    "type": "generated-index", 
     "title": "Server 機能一覧"
   }
 }

@@ -1,10 +1,9 @@
 {
   "label": "Local Features",
   "position": 1,
+  "id": "en_us/local-features",
   "link": {
     "type": "generated-index",
-    "title": "Local Features",
-    "description": "All local features of Infinite Client.",
-    "slug": "/category/local-features"
+    "title": "Local Features"
   }
 }

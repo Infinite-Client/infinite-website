@@ -1,8 +1,8 @@
 {
   "label": "Rendering",
-  "key":"global-rendering",
+  "id": "en_us/global-features/rendering",
   "link": {
-    "type": "generated-index",
+    "type": "generated-index", 
     "title": "Rendering 機能一覧"
   }
 }

@@ -1,10 +1,9 @@
 {
   "label": "Global Features",
   "position": 2,
+  "id": "en_us/global-features",
   "link": {
     "type": "generated-index",
-    "title": "Global Features",
-    "description": "All global features of Infinite Client.",
-    "slug": "/category/global-features"
+    "title": "Global Features"
   }
 }

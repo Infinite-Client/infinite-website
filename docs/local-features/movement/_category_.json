@@ -1,7 +1,8 @@
 {
   "label": "Movement",
+  "id": "en_us/local-features/movement",
   "link": {
-    "type": "generated-index",
+    "type": "generated-index", 
     "title": "Movement 機能一覧"
   }
 }
