@@ -12,6 +12,7 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
+    "generate-feature-docs":"bash scripts/gen-docs.sh",
     "typecheck": "tsc",
     "lint":"eslint",
     "format": "prettier --write ."
