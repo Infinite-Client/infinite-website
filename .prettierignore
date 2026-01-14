@@ -1,7 +1,0 @@
-build/
-node_modules/
-.docusaurus/
-bun.lock
-package.json
-tsconfig.json
-infinite-client/
