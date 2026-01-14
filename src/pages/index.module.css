@@ -7,7 +7,7 @@
 }
 
 .heroBanner::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background:
@@ -107,7 +107,7 @@
 }
 
 .meta li::before {
-  content: '•';
+  content: "•";
   color: var(--meta-bullet-color);
 }
 

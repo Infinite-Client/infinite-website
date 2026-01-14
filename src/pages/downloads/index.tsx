@@ -1,74 +1,72 @@
-import { ReactElement, useEffect, useState } from 'react'
-import Layout from '@theme/Layout'
-import useBaseUrl from '@docusaurus/useBaseUrl'
-import styles from './downloads.module.css'
-import Translate from '@docusaurus/Translate'
+import { ReactElement, useEffect, useState } from "react";
+import Layout from "@theme/Layout";
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import styles from "./downloads.module.css";
+import Translate from "@docusaurus/Translate";
 
 type Release = {
-  tag_name: string
-  html_url: string
-  prerelease: boolean
-  assets?: { name: string; browser_download_url: string }[]
-}
+  tag_name: string;
+  html_url: string;
+  prerelease: boolean;
+  assets?: { name: string; browser_download_url: string }[];
+};
 
 export default function DownloadsPage(): ReactElement {
-  const [releases, setReleases] = useState<Release[]>([])
+  const [releases, setReleases] = useState<Release[]>([]);
   const [status, setStatus] = useState(
-    <Translate id="downloads.status.loading">Loading releases from GitHub…</Translate>
-  )
-  const [selected, setSelected] = useState<string | undefined>()
-  const backHref = useBaseUrl('/')
-  const apiUrl = 'https://api.github.com/repos/Infinite-Client/infinite-client/releases?per_page=15'
+    <Translate id="downloads.status.loading">Loading releases from GitHub…</Translate>,
+  );
+  const [selected, setSelected] = useState<string | undefined>();
+  const backHref = useBaseUrl("/");
+  const apiUrl =
+    "https://api.github.com/repos/Infinite-Client/infinite-client/releases?per_page=15";
 
   useEffect(() => {
     async function loadReleases() {
       try {
-        const res = await fetch(apiUrl, { headers: { Accept: 'application/vnd.github+json' } })
-        if (!res.ok) throw new Error(`GitHub API returned ${res.status}`)
-        const data: Release[] = await res.json()
-        setReleases(data)
+        const res = await fetch(apiUrl, { headers: { Accept: "application/vnd.github+json" } });
+        if (!res.ok) throw new Error(`GitHub API returned ${res.status}`);
+        const data: Release[] = await res.json();
+        setReleases(data);
         setStatus(
           data.length ? (
             <Translate id="downloads.status.synced">Release list synced from GitHub.</Translate>
           ) : (
             <Translate id="downloads.status.noReleases">No releases found on GitHub.</Translate>
-          )
-        )
+          ),
+        );
         if (data.length) {
-          const firstUrl = jarAssetUrl(data[0]) ?? data[0].html_url
-          setSelected(firstUrl)
+          const firstUrl = jarAssetUrl(data[0]) ?? data[0].html_url;
+          setSelected(firstUrl);
         }
       } catch {
         setStatus(
           <Translate id="downloads.status.error">
             Could not load releases (GitHub API failed). Using fallback latest link.
-          </Translate>
-        )
-        setSelected('https://github.com/Infinite-Client/infinite-client/releases/latest')
+          </Translate>,
+        );
+        setSelected("https://github.com/Infinite-Client/infinite-client/releases/latest");
       }
     }
-    loadReleases()
-  }, [])
+    loadReleases();
+  }, []);
 
   const jarAssetUrl = (release: Release): string | null => {
-    if (!release.assets) return null
+    if (!release.assets) return null;
     const asset = release.assets.find((a) => {
-      const name = (a.name || '').toLowerCase()
-      return name.endsWith('.jar') && !name.includes('sources')
-    })
-    return asset ? asset.browser_download_url : null
-  }
+      const name = (a.name || "").toLowerCase();
+      return name.endsWith(".jar") && !name.includes("sources");
+    });
+    return asset ? asset.browser_download_url : null;
+  };
 
   const handleDownload = () => {
-    if (!selected) return
-    window.location.href = selected
-  }
+    if (!selected) return;
+    window.location.href = selected;
+  };
 
   return (
-    <Layout
-      title="Downloads"
-      description="Download Infinite Client builds"
-    >
+    <Layout title="Downloads" description="Download Infinite Client builds">
       <div className={styles.downloadShell}>
         <main className={styles.card}>
           <div className={styles.pill}>
@@ -93,7 +91,7 @@ export default function DownloadsPage(): ReactElement {
               </option>
             )}
             {releases.map((release, index) => {
-              const jarUrl = jarAssetUrl(release) ?? release.html_url
+              const jarUrl = jarAssetUrl(release) ?? release.html_url;
               let label =
                 index === 0 ? (
                   <Translate
@@ -102,18 +100,18 @@ export default function DownloadsPage(): ReactElement {
                   ></Translate>
                 ) : (
                   release.tag_name
-                )
+                );
               if (release.prerelease)
                 label = (
                   <>
                     {label} <Translate id="downloads.option.preRelease"> (pre-release)</Translate>
                   </>
-                )
+                );
               return (
                 <option key={release.tag_name} value={jarUrl}>
                   {label}
                 </option>
-              )
+              );
             })}
           </select>
           <div className={styles.status}>{status}</div>
@@ -134,5 +132,5 @@ export default function DownloadsPage(): ReactElement {
         </main>
       </div>
     </Layout>
-  )
+  );
 }

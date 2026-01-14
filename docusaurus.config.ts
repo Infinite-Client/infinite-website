@@ -1,13 +1,13 @@
-import { themes as prismThemes } from 'prism-react-renderer'
-import type { Config } from '@docusaurus/types'
-import type * as Preset from '@docusaurus/preset-classic'
+import { themes as prismThemes } from "prism-react-renderer";
+import type { Config } from "@docusaurus/types";
+import type * as Preset from "@docusaurus/preset-classic";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Infinite Client',
-  tagline: 'Lightweight Fabric utility client for Minecraft 1.21.10',
-  favicon: 'img/infinite-icon.svg',
+  title: "Infinite Client",
+  tagline: "Lightweight Fabric utility client for Minecraft 1.21.10",
+  favicon: "img/infinite-icon.svg",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -16,52 +16,52 @@ const config: Config = {
 
   // Set the production url of your site here
   // Production site root (no path segments)
-  url: 'https://infinite-client.infinityon.com',
+  url: "https://infinite-client.infinityon.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'The-Infinitys', // Usually your GitHub org/user name.
-  projectName: 'minecraft.infinite-client', // Usually your repo name.
+  organizationName: "The-Infinitys", // Usually your GitHub org/user name.
+  projectName: "minecraft.infinite-client", // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: "throw",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'ja',
-    locales: ['en', 'ja'],
+    defaultLocale: "ja",
+    locales: ["en", "ja"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       {
         docs: {
-          sidebarPath: './sidebars.ts',
+          sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/Infinite-Client/infinite-client/tree/main/docs',
+          editUrl: "https://github.com/Infinite-Client/infinite-client/tree/main/docs",
         },
         blog: {
           showReadingTime: true,
           feedOptions: {
-            type: ['rss', 'atom'],
+            type: ["rss", "atom"],
             xslt: true,
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/Infinite-Client/infinite-client/tree/main/docs',
+          editUrl: "https://github.com/Infinite-Client/infinite-client/tree/main/docs",
           // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+          onInlineTags: "warn",
+          onInlineAuthors: "warn",
+          onUntruncatedBlogPosts: "warn",
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       } satisfies Preset.Options,
     ],
@@ -69,81 +69,81 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/infinite-icon.svg',
+    image: "img/infinite-icon.svg",
     colorMode: {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Infinite Client',
+      title: "Infinite Client",
       logo: {
-        alt: 'Infinite Client Logo',
-        src: 'img/infinite-icon.svg',
+        alt: "Infinite Client Logo",
+        src: "img/infinite-icon.svg",
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Docs',
+          type: "docSidebar",
+          sidebarId: "tutorialSidebar",
+          position: "left",
+          label: "Docs",
         },
         {
-          to: '/downloads',
-          label: 'Download',
-          position: 'right',
+          to: "/downloads",
+          label: "Download",
+          position: "right",
         },
         {
-          href: 'https://github.com/Infinite-Client/infinite-client',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/Infinite-Client/infinite-client",
+          label: "GitHub",
+          position: "right",
         },
         {
-          type: 'localeDropdown',
-          position: 'right',
+          type: "localeDropdown",
+          position: "right",
         },
       ],
     },
     footer: {
       links: [
         {
-          title: 'Docs',
+          title: "Docs",
           items: [
             {
-              label: 'Quick Start',
-              to: '/docs/intro',
+              label: "Quick Start",
+              to: "/docs/intro",
             },
             {
-              label: 'Installation',
-              to: '/docs/getting-started/installation',
+              label: "Installation",
+              to: "/docs/getting-started/installation",
             },
           ],
         },
         {
-          title: 'Project',
+          title: "Project",
           items: [
             {
-              label: 'GitHub Repo',
-              href: 'https://github.com/Infinite-Client/infinite-client',
+              label: "GitHub Repo",
+              href: "https://github.com/Infinite-Client/infinite-client",
             },
             {
-              label: 'Releases',
-              to: '/downloads',
+              label: "Releases",
+              to: "/downloads",
             },
             {
-              label: 'Issue Tracker',
-              href: 'https://github.com/Infinite-Client/infinite-client/issues',
+              label: "Issue Tracker",
+              href: "https://github.com/Infinite-Client/infinite-client/issues",
             },
           ],
         },
         {
-          title: 'More',
+          title: "More",
           items: [
             {
-              label: 'Homepage',
-              href: 'https://the-infinitys.f5.si/minecraft/infinite-client',
+              label: "Homepage",
+              href: "https://the-infinitys.f5.si/minecraft/infinite-client",
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/Infinite-Client/infinite-client',
+              label: "GitHub",
+              href: "https://github.com/Infinite-Client/infinite-client",
             },
           ],
         },
@@ -155,6 +155,6 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
-}
+};
 
-export default config
+export default config;

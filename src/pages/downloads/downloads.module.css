@@ -27,7 +27,7 @@
 }
 
 .card::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: -40% 10% auto auto;
   height: 180px;
