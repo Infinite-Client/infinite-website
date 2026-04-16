@@ -17,7 +17,7 @@ function HomepageHeader() {
       <div className={clsx('container', styles.heroGrid)}>
         <div className={styles.heroCopy}>
           <span className={styles.badge}>
-            <Translate id="homepage.header.badge.fabricVersion">Fabric 1.21.10</Translate>
+            <Translate id="homepage.header.badge.fabricVersion">Fabric 26.1.2</Translate>
           </span>
           <h1 className={styles.heroTitle}>{siteConfig.title}</h1>
           <p className={styles.heroSubtitle}>{siteConfig.tagline}</p>
@@ -39,10 +39,10 @@ function HomepageHeader() {
           </div>
           <ul className={styles.meta}>
             <li>
-              <Translate id="homepage.header.meta.fabricLoader">Fabric Loader 0.17.x</Translate>
+              <Translate id="homepage.header.meta.fabricLoader">Fabric Loader 0.19.2</Translate>
             </li>
             <li>
-              <Translate id="homepage.header.meta.fabricApi">Fabric API 0.135.0+1.21.10</Translate>
+              <Translate id="homepage.header.meta.fabricApi">Fabric API 0.146.0+26.1.2</Translate>
             </li>
             <li>
               <Translate id="homepage.header.meta.focusedModules">
@@ -62,7 +62,7 @@ function HomepageHeader() {
 
 export default function Home(): ReactNode {
   const { siteConfig } = useDocusaurusContext()
-  const description = "Infinite Client — Lightweight Fabric utility client for Minecraft 1.21.10"
+  const description = 'Infinite Client — Lightweight Fabric utility client for Minecraft 26.1.2'
   return (
     <Layout title={siteConfig.title} description={description}>
       <HomepageHeader />

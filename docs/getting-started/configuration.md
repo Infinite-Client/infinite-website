@@ -26,6 +26,6 @@ Infinite Client aims to stay simple: enable only what you need and keep the scre
 
 ## Troubleshooting
 
-- Nothing happens when toggling a module: confirm you are on the Fabric `1.21.10` profile with Fabric API installed.
+- Nothing happens when toggling a module: confirm you are on the Fabric `26.1.2` profile with Fabric API installed.
 - Keybind conflicts: clear duplicate keybinds in the vanilla settings or in other mods.
 - Rendering glitches: disable conflicting visual mods (e.g., other fullbright/x-ray style tweaks) and restart.

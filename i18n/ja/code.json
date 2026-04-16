@@ -327,7 +327,7 @@
     "description": "The title of the tag list page"
   },
   "homepage.header.badge.fabricVersion": {
-    "message": "Fabric 1.21.10",
+    "message": "Fabric 26.1.2",
     "description": "Homepage header badge for Fabric version"
   },
   "homepage.header.button.getStarted": {
@@ -343,11 +343,11 @@
     "description": "Homepage header 'Discord' button"
   },
   "homepage.header.meta.fabricLoader": {
-    "message": "Fabric Loader 0.17.x",
+    "message": "Fabric Loader 0.19.2",
     "description": "Homepage header meta information for Fabric Loader version"
   },
   "homepage.header.meta.fabricApi": {
-    "message": "Fabric API 0.135.0+1.21.10",
+    "message": "Fabric API 0.146.0+26.1.2",
     "description": "Homepage header meta information for Fabric API version"
   },
   "homepage.header.meta.focusedModules": {
@@ -355,7 +355,7 @@
     "description": "Homepage header meta information for focused modules and clean UI"
   },
   "homepage.layout.description": {
-    "message": "Infinite Client — Minecraft 1.21.10向け軽量Fabricユーティリティクライアント",
+    "message": "Infinite Client — Minecraft 26.1.2向け軽量Fabricユーティリティクライアント",
     "description": "Homepage layout description"
   },
   "homepage.features.lightweightCore.title": {
@@ -371,7 +371,7 @@
     "description": "Homepage features section title for Fabric-native"
   },
   "homepage.features.fabricNative.description": {
-    "message": "Fabric 1.21.10向けに構築され、バニラに近いAPIバージョンを維持しています。",
+    "message": "Fabric 26.1.2向けに構築され、バニラに近いAPIバージョンを維持しています。",
     "description": "Homepage features section description for Fabric-native"
   },
   "homepage.features.practicalModules.title": {
@@ -407,7 +407,7 @@
     "description": "Downloads page layout description"
   },
   "downloads.pill.fabricVersion": {
-    "message": "Fabric 1.21.10",
+    "message": "Fabric 26.1.2",
     "description": "Downloads page Fabric version pill"
   },
   "downloads.header.title": {

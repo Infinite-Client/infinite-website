@@ -1,0 +1,89 @@
+---
+title: BlockHighlightFeature
+---
+
+# BlockHighlightFeature
+
+特定のブロックの周囲に枠線を表示し、強調します。
+
+## 設定項目
+
+### blocksToHighlight
+
+ハイライト対象
+
+| タイプ              | デフォルト値                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | 詳細情報                               |
+| :------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------- |
+| `BlockAndColorList` | `[BlockAndColor(blockId=minecraft:ancient_debris, color=-2141703119), BlockAndColor(blockId=minecraft:diamond_ore, color=-2147418113), BlockAndColor(blockId=minecraft:deepslate_diamond_ore, color=-2147418113), BlockAndColor(blockId=minecraft:diamond_block, color=-2147418113), BlockAndColor(blockId=minecraft:emerald_ore, color=-2147418368), BlockAndColor(blockId=minecraft:deepslate_emerald_ore, color=-2147418368), BlockAndColor(blockId=minecraft:emerald_block, color=-2147418368), BlockAndColor(blockId=minecraft:gold_ore, color=-2130716928), BlockAndColor(blockId=minecraft:deepslate_gold_ore, color=-2130716928), BlockAndColor(blockId=minecraft:nether_gold_ore, color=-2130716928), BlockAndColor(blockId=minecraft:gold_block, color=-2130716928), BlockAndColor(blockId=minecraft:iron_ore, color=-2133282925), BlockAndColor(blockId=minecraft:deepslate_iron_ore, color=-2133282925), BlockAndColor(blockId=minecraft:iron_block, color=-2134851392), BlockAndColor(blockId=minecraft:copper_ore, color=-2132312994), BlockAndColor(blockId=minecraft:deepslate_copper_ore, color=-2132312994), BlockAndColor(blockId=minecraft:coal_ore, color=-2144128205), BlockAndColor(blockId=minecraft:deepslate_coal_ore, color=-2144128205), BlockAndColor(blockId=minecraft:lapis_ore, color=-2147483393), BlockAndColor(blockId=minecraft:deepslate_lapis_ore, color=-2147483393), BlockAndColor(blockId=minecraft:redstone_ore, color=-2130771968), BlockAndColor(blockId=minecraft:deepslate_redstone_ore, color=-2130771968), BlockAndColor(blockId=minecraft:nether_quartz_ore, color=-2130706433), BlockAndColor(blockId=minecraft:chest, color=-2130729728), BlockAndColor(blockId=minecraft:trapped_chest, color=-2130754304), BlockAndColor(blockId=minecraft:ender_chest, color=-2139094912), BlockAndColor(blockId=minecraft:barrel, color=-2138356461), BlockAndColor(blockId=minecraft:shulker_box, color=-2130771713), BlockAndColor(blockId=minecraft:white_shulker_box, color=-2130706433), BlockAndColor(blockId=minecraft:orange_shulker_box, color=-2130729728), BlockAndColor(blockId=minecraft:magenta_shulker_box, color=-2130771713), BlockAndColor(blockId=minecraft:light_blue_shulker_box, color=-2136090394), BlockAndColor(blockId=minecraft:yellow_shulker_box, color=-2130706688), BlockAndColor(blockId=minecraft:lime_shulker_box, color=-2147418368), BlockAndColor(blockId=minecraft:pink_shulker_box, color=-2130722613), BlockAndColor(blockId=minecraft:gray_shulker_box, color=-2139062144), BlockAndColor(blockId=minecraft:light_gray_shulker_box, color=-2133601325), BlockAndColor(blockId=minecraft:cyan_shulker_box, color=-2147418113), BlockAndColor(blockId=minecraft:purple_shulker_box, color=-2139094912), BlockAndColor(blockId=minecraft:blue_shulker_box, color=-2147483393), BlockAndColor(blockId=minecraft:brown_shulker_box, color=-2138356461), BlockAndColor(blockId=minecraft:green_shulker_box, color=-2147450880), BlockAndColor(blockId=minecraft:red_shulker_box, color=-2130771968), BlockAndColor(blockId=minecraft:black_shulker_box, color=-2147483648), BlockAndColor(blockId=minecraft:spawner, color=-2145480449), BlockAndColor(blockId=minecraft:beacon, color=-2147418113), BlockAndColor(blockId=minecraft:enchanting_table, color=-2130771713), BlockAndColor(blockId=minecraft:tnt, color=-2130771968), BlockAndColor(blockId=minecraft:respawn_anchor, color=-2130706688), BlockAndColor(blockId=minecraft:lodestone, color=-2134851392), BlockAndColor(blockId=minecraft:nether_portal, color=-2137443636), BlockAndColor(blockId=minecraft:end_portal_frame, color=-2147458048), BlockAndColor(blockId=minecraft:end_portal, color=-2147483648), BlockAndColor(blockId=minecraft:suspicious_sand, color=-2131829630), BlockAndColor(blockId=minecraft:suspicious_gravel, color=-2139062144), BlockAndColor(blockId=minecraft:budding_amethyst, color=-2136712466), BlockAndColor(blockId=minecraft:trial_spawner, color=-2130736128), BlockAndColor(blockId=minecraft:vault, color=-2135390709)]` | デフォルト要素数: 58 (Block-Color Map) |
+
+---
+
+### scanRange
+
+スキャン範囲
+
+| タイプ | デフォルト値 | 詳細情報                  |
+| :----- | :----------- | :------------------------ |
+| `Int`  | `12`         | 最小値: `1`, 最大値: `32` |
+
+---
+
+### renderRange
+
+描画範囲
+
+| タイプ | デフォルト値 | 詳細情報                   |
+| :----- | :----------- | :------------------------- |
+| `Int`  | `128`        | 最小値: `8`, 最大値: `512` |
+
+---
+
+### renderStyle
+
+描画スタイル
+
+| タイプ          | デフォルト値 | 詳細情報                         |
+| :-------------- | :----------- | :------------------------------- |
+| `EnumSelection` | `Lines`      | 選択肢: `Lines`, `Faces`, `Both` |
+
+---
+
+### maxDrawCount
+
+最大描画数
+
+| タイプ | デフォルト値 | 詳細情報                         |
+| :----- | :----------- | :------------------------------- |
+| `Int`  | `2000`       | 最小値: `1000`, 最大値: `100000` |
+
+---
+
+### lineWidth
+
+線の太さ
+
+| タイプ  | デフォルト値 | 詳細情報                     |
+| :------ | :----------- | :--------------------------- |
+| `Float` | `1.5`        | 最小値: `0.1`, 最大値: `5.0` |
+
+---
+
+### viewFocus
+
+視線フォーカス
+
+| タイプ          | デフォルト値 | 詳細情報                             |
+| :-------------- | :----------- | :----------------------------------- |
+| `EnumSelection` | `Balanced`   | 選択肢: `None`, `Balanced`, `Strict` |
+
+---
+
+### animation
+
+アニメーション
+
+| タイプ          | デフォルト値 | 詳細情報                          |
+| :-------------- | :----------- | :-------------------------------- |
+| `EnumSelection` | `Pulse`      | 選択肢: `None`, `Pulse`, `FadeIn` |
+
+---

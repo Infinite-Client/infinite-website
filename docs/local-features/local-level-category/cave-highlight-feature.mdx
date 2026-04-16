@@ -1,0 +1,129 @@
+---
+title: CaveHighlightFeature
+---
+
+# CaveHighlightFeature
+
+Highlights caves and air pockets to make subterranean exploration easier.
+
+## Properties
+
+### blocksToHighlight
+
+Blocks to Highlight
+
+| Type                | Default                                                                                                                                                                    | Details                            |
+| :------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------- |
+| `BlockAndColorList` | `[BlockAndColor(blockId=minecraft:lava, color=553600256), BlockAndColor(blockId=minecraft:water, color=536888831), BlockAndColor(blockId=minecraft:air, color=553648127)]` | Default Count: 3 (Block-Color Map) |
+
+---
+
+### scanRange
+
+Scan Range
+
+| Type  | Default | Details                     |
+| :---- | :------ | :-------------------------- |
+| `Int` | `12`    | Minimum: `1`, Maximum: `32` |
+
+---
+
+### renderRange
+
+Render Range
+
+| Type  | Default | Details                      |
+| :---- | :------ | :--------------------------- |
+| `Int` | `128`   | Minimum: `8`, Maximum: `512` |
+
+---
+
+### renderStyle
+
+Render Style
+
+| Type            | Default | Details                           |
+| :-------------- | :------ | :-------------------------------- |
+| `EnumSelection` | `Faces` | Options: `Lines`, `Faces`, `Both` |
+
+---
+
+### maxDrawCount
+
+Max Draw Count
+
+| Type  | Default | Details                            |
+| :---- | :------ | :--------------------------------- |
+| `Int` | `20000` | Minimum: `1000`, Maximum: `100000` |
+
+---
+
+### lineWidth
+
+Line Width
+
+| Type    | Default | Details                        |
+| :------ | :------ | :----------------------------- |
+| `Float` | `1.5`   | Minimum: `0.1`, Maximum: `5.0` |
+
+---
+
+### viewFocus
+
+View Focus
+
+| Type            | Default    | Details                               |
+| :-------------- | :--------- | :------------------------------------ |
+| `EnumSelection` | `Balanced` | Options: `None`, `Balanced`, `Strict` |
+
+---
+
+### animation
+
+Animation
+
+| Type            | Default | Details                            |
+| :-------------- | :------ | :--------------------------------- |
+| `EnumSelection` | `Pulse` | Options: `None`, `Pulse`, `FadeIn` |
+
+---
+
+### maxY
+
+Max Y Coordinate
+
+| Type  | Default | Details                        |
+| :---- | :------ | :----------------------------- |
+| `Int` | `64`    | Minimum: `-64`, Maximum: `320` |
+
+---
+
+### checkSurroundings
+
+Check Surroundings
+
+| Type      | Default | Details |
+| :-------- | :------ | :------ |
+| `Boolean` | `true`  | -       |
+
+---
+
+### skyLightThreshold
+
+Sky Light Threshold
+
+| Type  | Default | Details                     |
+| :---- | :------ | :-------------------------- |
+| `Int` | `0`     | Minimum: `0`, Maximum: `15` |
+
+---
+
+### playerExclusionRadius
+
+Player Exclusion Radius
+
+| Type  | Default | Details                     |
+| :---- | :------ | :-------------------------- |
+| `Int` | `5`     | Minimum: `0`, Maximum: `20` |
+
+---
