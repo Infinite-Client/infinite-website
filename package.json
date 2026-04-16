@@ -12,58 +12,30 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-<<<<<<< HEAD
     "docs": "bash scripts/docs.sh",
     "lint": "oxlint",
-    "format": "oxfmt"
-=======
+    "format": "oxfmt",
     "generate-feature-docs": "bash scripts/gen-docs.sh",
-    "typecheck": "tsc",
-    "lint": "eslint",
-    "format": "prettier --write ."
->>>>>>> main
+    "typecheck": "tsc"
   },
   "dependencies": {
     "@docusaurus/core": "3.9.2",
     "@docusaurus/preset-classic": "3.9.2",
     "@mdx-js/react": "^3.1.1",
     "clsx": "^2.1.1",
-<<<<<<< HEAD
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
-=======
-    "eslint-config-google": "^0.14.0",
-    "prettier-eslint": "^16.4.2",
-    "prettier-eslint-cli": "^8.0.1",
-    "prism-react-renderer": "^2.4.1",
-    "react": "^19.2.5",
-    "react-dom": "^19.2.5"
->>>>>>> main
   },
   "devDependencies": {
-    "oxfmt": "^0.24.0",
-    "oxlint": "^1.39.0",
     "@docusaurus/module-type-aliases": "3.9.2",
     "@docusaurus/tsconfig": "3.9.2",
     "@docusaurus/types": "3.9.2",
-<<<<<<< HEAD
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "@typescript-eslint/eslint-plugin": "^8.48.0",
     "globals": "^16.5.0",
-=======
-    "@eslint/js": "^9.39.4",
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3",
-    "@typescript-eslint/eslint-plugin": "^8.58.2",
-    "eslint": "^9.39.4",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-prettier": "^5.5.5",
-    "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^7.0.1",
-    "globals": "^16.5.0",
-    "prettier": "^3.8.3",
->>>>>>> main
+    "oxfmt": "^0.24.0",
+    "oxlint": "^1.39.0",
     "typescript": "~5.6.3"
   },
   "browserslist": {
