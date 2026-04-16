@@ -70,7 +70,7 @@ export default function DownloadsPage(): ReactElement {
       <div className={styles.downloadShell}>
         <main className={styles.card}>
           <div className={styles.pill}>
-            <Translate id="downloads.pill.fabricVersion">Fabric 1.21.10</Translate>
+            <Translate id="downloads.pill.fabricVersion">Fabric 26.1.2</Translate>
           </div>
           <h1>
             <Translate id="downloads.header.title">Download Infinite Client</Translate>
