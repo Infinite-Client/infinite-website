@@ -25,7 +25,7 @@ const FeatureList: FeatureItem[] = [
     icon: "🧵",
     description: (
       <Translate id="homepage.features.fabricNative.description">
-        Built for Fabric 1.21.10 with matching API versions to stay close to vanilla.
+        Built for Fabric 26.1.2 with matching API versions to stay close to vanilla.
       </Translate>
     ),
   },

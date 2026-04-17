@@ -6,7 +6,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "Infinite Client",
-  tagline: "Lightweight Fabric utility client for Minecraft 1.21.10",
+  tagline: "Lightweight Fabric utility client for Minecraft 26.1.2",
   favicon: "img/infinite-icon.svg",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
